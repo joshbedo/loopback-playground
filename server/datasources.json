@@ -1,0 +1,18 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "postgresDs": {
+    "host": "localhost",
+    "database": "sfs_loopback",
+    "name": "postgresDs",
+    "connector": "postgresql"
+  },
+  "mongoDs": {
+    "host": "localhost",
+    "database": "sfs_loopback",
+    "name": "mongoDs",
+    "connector": "mongodb"
+  }
+}
