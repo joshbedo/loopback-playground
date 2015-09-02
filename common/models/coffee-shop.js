@@ -1,13 +1,15 @@
+'use strict';
+
 module.exports = function(CoffeeShop) {
   CoffeeShop.status = function(cb) {
+    var response = null;
     var currentDate = new Date();
     var currentHour = currentDate.getHours();
-    var OPEN_HOUR = 6;
-    var CLOSE_HOUR = 20;
+
+    const OPEN_HOUR = 6;
+    const CLOSE_HOUR = 20;
 
     console.log('Current hour is ' + currentHour);
-
-    var resp;
 
     if (currentHour > OPEN_HOUR && currentHour < CLOSE_HOUR) {
       response = 'We are open for business.';
@@ -15,7 +17,7 @@ module.exports = function(CoffeeShop) {
       response = 'Sorry, we are closed. Open faily from 6am to 8pm.';
     }
 
-    cb(null, resp);
+    cb(null, response);
   };
 
   CoffeeShop.remoteMethod(
