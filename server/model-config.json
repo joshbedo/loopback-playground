@@ -35,5 +35,9 @@
   "CoffeeShop": {
     "dataSource": "postgresDs",
     "public": true
+  },
+  "review": {
+    "dataSource": "mongoDs",
+    "public": true
   }
 }
